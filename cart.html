@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/services/wikslogo.png" type="image/png">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+</head>
+<body>
+    <!-- nav -->
+      <header>
+        <div class="top-bar">
+            <div class="info">
+                <li class="info-item">
+                    <a href="#"><ion-icon name="mail-outline"></ion-icon>
+                    <a href="#">info@wiksestore.com</a>
+                </li>
+                <li>
+                    <a href="#"><ion-icon name="location-outline"></ion-icon>
+                    <a href="#">Amasaman</a>
+                </li>
+                
+            </div>
+            <li ><a href="index.html"><button class="header-top-btn">Wiks Estore</button></a></li>
+        </div>
+        <nav class="nav-bar">
+            <div class="menu-icon" id="menu-icon">
+                <a href="#"><ion-icon name="menu-outline"></ion-icon>
+            </div>
+            <div class="logo">
+                <!-- <a href="index.html"><img src="./images/services/wikslogo.png" alt=""></a> -->
+
+               <li><a href="index.html">Wiks <span>estore</span></a></li>
+            </div>
+            <div class="search-bar">
+                <a href="#"><ion-icon name="search-outline"></a></ion-icon>
+                <input type="text" placeholder="Search products">
+            </div>
+            <div class="nav-icons">
+                <li><a href="./auth/login.html"><ion-icon name="person-outline"></ion-icon></a></a></li>
+                <a href="cart.html"><ion-icon name="cart-outline" class="cart-icon"></ion-icon></a>
+                <span class="cart-count" id="cart-count">0</span>
+            </div>
+        </nav>
+    </header>
+    <!-- side bar -->
+    <aside class="sidebar" id="sidebar">
+        <div class="close-icon" id="close-icon">
+            <a href="#"><ion-icon name="close-outline"></ion-icon>
+        </div>
+        <div class="logo-aside">
+            <li><a href="index.html">wiks estore</a></li>
+         </div>
+        <div class="sidebar-content">
+            <h2>Need Help?</h2>
+            <h3>My wiks estore Account</h3>
+            <ul>
+                <li><a href="#"><ion-icon name="bag-outline"></ion-icon> Orders</a></li>
+                <li><a href="#"><ion-icon name="create-outline"></ion-icon> Pending Reviews</a></li>
+                <li><a href="#"><ion-icon name="pricetag-outline"></ion-icon> Vouchers</a></li>
+                <li><a href="#"><ion-icon name="heart-outline"></ion-icon> Saved Items</a></li>
+            </ul>
+            <h3>Our Categories</h3>
+            <ul>
+                <li><a href="games.html"><ion-icon name="storefront-outline"></ion-icon> Games</a></li>
+                <li><a href="smartphone.html"><ion-icon name="phone-portrait-outline"></ion-icon>Smart Phones</a></li>
+                <li><a href="headphone.html"><ion-icon name="fitness-outline"></ion-icon> Head Phones</a></li>
+                <li><a href="cellphones.html"><ion-icon name="home-outline"></ion-icon> Cell Phones</a></li>
+                <li><a href="powerbank.html"><ion-icon name="tv-outline"></ion-icon> Power Bank</a></li>
+                <li><a href="stoves.html"><ion-icon name="desktop-outline"></ion-icon> Stoves</a></li>
+                <li><a href="smartwatches.html"><ion-icon name="shirt-outline"></ion-icon> Smart Watches</a></li>
+                <li><a href="speakers.html"><ion-icon name="barbell-outline"></ion-icon> Speakers</a></li>
+                <li><a href="tablet.html"><ion-icon name="baby-outline"></ion-icon> Tablets</a></li>
+                <li><a href="house.html"><ion-icon name="game-controller-outline"></ion-icon> Home Appliance</a></li>
+                <li><a href="fridegs.html"><ion-icon name="game-controller-outline"></ion-icon> Fridges </a></li>
+                <li><a href="freezers.html"><ion-icon name="game-controller-outline"></ion-icon> Freezers</a></li>
+            </ul>
+        </div>
+
+        <p>&copy; wiksestore</p>
+    </aside>
+    
+    <!-- cart modal -->
+        <section class="cart container">
+            <h4>Shopping Cart</h4>
+            <div id="cart-items"></div>
+            <div class="cart-summary">
+                <h3>Summary</h3>
+                <div class="promo">
+                    <a href="#">Do You have a promo Code</a>
+                    <ion-icon name="cash-outline"></ion-icon>
+                </div>
+                <div class="total">
+                    <h4 style="color: #fff;">Total</h4>
+                    <p id="cart-total" style="text-align: center; color: #fff;"></p>
+                </div>
+                <div class="pay">
+                    <a href="./payment/payment.html"><button class="btn-offer">Pay with Card</button></a>
+                    <p style="text-align: center; color: #fff;margin-top:20px">OR</p>
+                </div>
+                <div class="pay">
+                    <a href="./payment/momo.html"><button class="btn-offer">Pay with Momo</button></a>
+                </div>
+                <div class="continue-shop">
+                    <button onclick="history.back()" class="btn-offer">Continue Shopping</button>
+                </div>
+            </div>
+            <button id="clear-cart" style="display: none;">Clear Cart</button>
+        </section>
+    
+    <!-- footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h2>Get support</h2>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Live chat</a></li>
+                    <li><a href="#">Check order status</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h2>Trade Assurance</h2>
+                <ul>
+                    <li><a href="#">Safe and easy payments</a></li>
+                    <li><a href="#">Money-back policy</a></li>
+                    <li><a href="#">On-time shipping</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h2>Source on Our Website</h2>
+                <ul>
+                    <li><a href="#">Request for Quotation</a></li>
+                    <li><a href="#">Membership program</a></li>
+                    <li><a href="#">OurWebsite Logistics</a></li>
+                   
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h2>Sell on Our Website</h2>
+                <ul>
+                    <li><a href="#">Start selling</a></li>
+                    <li><a href="#">Seller Central</a></li>
+                    <li><a href="#">Become a Verified Supplier</a></li>
+                    
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h2>Get to know us</h2>
+                <ul>
+                    <li><a href="#">About Our Website</a></li>
+                    <li><a href="#">Corporate responsibility</a></li>
+                    <li><a href="#">News center</a></li>
+                  
+                </ul>
+            </div>
+            <div class="footer-section subscribe">
+                <h2>Subscribe to our Newsletter</h2>
+                <form action="#" method="post">
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <h2 style="text-align: center; font-size: 13px; ">Follow us</h2>
+        <div class="social-media">
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-xing"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-xing"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 <a href="index.html">WiksEstore</a>. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <button id="go-to-top">Top</button>
+    <script src="cart.js"></script>
+    <script src="nav.js"></script>
+    <script src="../go-to-top.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
+</body>
+</html>

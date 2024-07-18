@@ -1,0 +1,146 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  color: #000000;
+  border-radius: 12px;
+  padding: 10px 40px;
+  /* gap: 40px; */
+  flex-wrap: wrap;
+}
+form{
+  flex: 1;
+  /* min-width: 300px; */
+    /* min-width: 300px; */
+  width: 100%;
+  margin: 10px;
+}
+
+.login-banner{
+  display: flex;
+  flex: 1;
+  /* min-width: 300px; */
+  width: 100%;
+  margin: 150px 10px;
+  background: url(../images/services/cartimg.jpg);
+  background-size: contain;
+  height: 70vh;
+  border-radius: 20px;
+}
+
+.baner-text{
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  /* display: block; */
+  margin: auto;
+}
+
+.baner-text p{
+  font-size: 14px;
+  text-transform: uppercase; 
+  margin: 20px;
+}
+.wrapper h1{
+  font-size: 16px;
+  text-align: center;
+}
+.wrapper .input-box{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+.input-box input{
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border-radius: 40px;
+  font-size: 16px;
+  color: #1d0101;
+  padding: 20px 45px 20px 20px;
+}
+.input-box input::placeholder{
+  color: #e00000;
+}
+.input-box i{
+  position: absolute;
+  right: 20px;
+  top: 30%;
+  transform: translate(-50%);
+  font-size: 20px;
+
+}
+.remember-forgot{
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+}
+.remember-forgot label input{
+  accent-color: #fff;
+  margin-right: 3px;
+
+}
+.remember-forgot a{
+  color: #000000;
+  text-decoration: none;
+
+}
+.remember-forgot a:hover{
+  text-decoration: underline;
+}
+.wrapper .btn{
+  width: 100%;
+  height: 45px;
+  background: #000000;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff7f7;
+  font-weight: 600;
+}
+.wrapper .register-link{
+  font-size: 14.5px;
+  text-align: center;
+  margin: 20px 0 15px;
+
+}
+.register-link p a{
+  color: #000000;
+  text-decoration: none;
+  font-weight: 600;
+}
+.register-link p a:hover{
+  text-decoration: underline;
+}
+
+
+/* queries */
+@media (max-width: 768px) {
+  .wrapper.container {
+    margin-top: 100px;
+    /* width: 100%; */
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.login-banner{
+    width: 100%;
+    margin: 0;
+    padding: 20px 20px;
+}
+
+.baner-text {
+    text-align: center;
+}
+}

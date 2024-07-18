@@ -1,0 +1,139 @@
+
+body {
+    background: url('shopping.jfif') no-repeat center center fixed;
+    background-size: cover;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    height: 100vh;
+}
+
+.clear{
+    clear: both;
+    margin-bottom: 90px;
+}
+.cl{
+    clear: both;
+    margin-bottom: 40px;
+}
+.container {
+    background-color: rgba(243, 243, 243, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    width: 90%;
+    max-width: 800px;
+    /* text-align: center; */
+    border-radius: 20px;
+    margin-top: 50px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    /* color: hsl(9, 100%, 62%); */
+}
+h2{
+    color: hsl(9, 100%, 62%);
+}
+
+.payment-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment-summary, .payment-method {
+    /* background-color: #fff; */
+    padding: 20px;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    width: 48%;
+    color: #fff;
+}
+
+.payment-summary h2, .payment-method h2 {
+    margin-bottom: 20px;
+}
+
+.summary-item {
+    margin-bottom: 20px;
+}
+
+.summary-item p, .summary-item span {
+    margin: 5px 0;
+}
+
+.total-price {
+    background-color: #f44336;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.total-price h3 {
+    margin: 10px 0;
+}
+
+.payment-icons img {
+    height: 40px;
+    margin: 0 10px;
+}
+
+.payment-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+label,.payment-form p{
+    color: #000;
+}
+.card-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-details input {
+    flex: 1;
+    margin-right: 5px;
+}
+
+.card-details input:last-child {
+    margin-right: 0;
+}
+
+.make-payment {
+    background-color: #00bcd4;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+    .payment-section {
+        flex-direction: column;
+    }
+
+    .payment-summary, .payment-method {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .card-details {
+        flex-direction: column;
+    }
+
+    .card-details input {
+        margin-bottom: 10px;
+    }
+
+    .card-details input:last-child {
+        margin-bottom: 0;
+    }
+}
